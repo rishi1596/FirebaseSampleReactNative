@@ -6,7 +6,10 @@
  * @flow
  */
 
-import React from 'react';
+import React, {Component} from 'react';
+import { AsyncStorage } from 'react-native';
+import firebase from 'react-native-firebase';
+
 import {
   SafeAreaView,
   StyleSheet,
@@ -24,7 +27,45 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
+//const App: () => React$Node = () => {
+  export default class App extends Component {
+  async componentDidMount() {
+    this.checkPermission();
+  }
+
+  async checkPermission() {
+    const enabled = await firebase.messaging().hasPermission();
+    if (enabled) {
+        this.getToken();
+    } else {
+        this.requestPermission();
+    }
+  }
+
+  async getToken() {
+    let fcmToken = await AsyncStorage.getItem('fcmToken');
+    if (!fcmToken) {
+        fcmToken = await firebase.messaging().getToken();
+        if (fcmToken) {
+            // user has a device token
+            await AsyncStorage.setItem('fcmToken', fcmToken);
+            console.log("TOKEN"+fcmToken);
+        }
+    }
+  }
+
+  async requestPermission() {
+    try {
+        await firebase.messaging().requestPermission();
+        // User has authorised
+        this.getToken();
+    } catch (error) {
+        // User has rejected permissions
+        console.log('permission rejected');
+    }
+  }
+
+render () {
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -70,6 +111,7 @@ const App: () => React$Node = () => {
       </SafeAreaView>
     </>
   );
+ }
 };
 
 const styles = StyleSheet.create({
@@ -111,4 +153,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+//export default App;

@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "620910176383",
+    "firebase_url": "https://react-native-sample-12a28.firebaseio.com",
+    "project_id": "react-native-sample-12a28",
+    "storage_bucket": "react-native-sample-12a28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620910176383:android:bdda3018bb58ca0a",
+        "android_client_info": {
+          "package_name": "com.awesomeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620910176383-p3n11p33ptutvv0he9j5irdhck8t130u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb4dWbjkadp9jR3An3tiLGtOy5DIuh22Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620910176383-p3n11p33ptutvv0he9j5irdhck8t130u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620910176383:android:4ac950c89eaa50f0f8374a",
+        "android_client_info": {
+          "package_name": "com.firebasesample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620910176383-p3n11p33ptutvv0he9j5irdhck8t130u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb4dWbjkadp9jR3An3tiLGtOy5DIuh22Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620910176383-p3n11p33ptutvv0he9j5irdhck8t130u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620910176383:android:9ff38a488ef583adf8374a",
+        "android_client_info": {
+          "package_name": "com.ranigao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620910176383-2j9tm2665fbk1s4f5latu02mfof25jc3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ranigao",
+            "certificate_hash": "ffc605954d5bcb8b330aeae4a04954ada36a6e5b"
+          }
+        },
+        {
+          "client_id": "620910176383-p3n11p33ptutvv0he9j5irdhck8t130u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb4dWbjkadp9jR3An3tiLGtOy5DIuh22Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620910176383-p3n11p33ptutvv0he9j5irdhck8t130u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
